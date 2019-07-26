@@ -31,8 +31,12 @@ header {
   padding: 2px;
 }
 
-#menu a {
+.menu a {
   color: var(--menu-text-color);
+}
+
+.menu a:hover {
+  color: var(--color-text-alt);
 }
 
 .menu {
@@ -56,23 +60,36 @@ header {
 }
 
 .about {
+  color: var(--color-text-main);
   text-align: center;
   padding-top: 5rem;
   height: 32rem;
 }
 
 .projects {
+  color: var(--color-text-main);
   text-align: center;
-  padding-top: 5rem;
-  height: 36rem;
+  padding-top: 6rem;
+  height: 35rem;
 }
 
 .contact a {
   color: var(--contact-text-color);
 }
+
+.contact a:hover {
+  color: var(--color-text-alt);
+}
+
+.contact h1 {
+  color: var(--color-text-main);
+  font-size: 2rem;
+}
+
 .contact {
   font-size: 5rem;
   text-align: center;
   color: var(--contact-text-color);
   height: 32rem;
+  padding-top: 6rem;
 }
