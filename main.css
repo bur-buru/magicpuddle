@@ -1,0 +1,78 @@
+:root {
+  /* define fonts */
+  --font-menu: "Font Aweome Brands";
+  --font-main: ;
+  --font-alt: ;
+
+  /* define colors */
+  --color-main:        #4b298b;
+  --color-main-alt:    #26a7de;
+  --color-text-main:   #ffffff;
+  --color-text-alt:    #0f0f0f;
+  --background-main:   #333333;
+  --background-alt: ;
+  --menu-text-color:   	#f0f0f0;
+  --contact-text-color: #26a7de;    
+}
+
+html {
+  font-family: var(--font-main);
+}
+
+body {
+  background-color: var(--background-main);
+}
+
+header {
+  font-family: var(--font-menu);
+  background-color: var(--color-main);
+  color:  var(--menu-text-color);
+  width: 100%;
+  padding: 2px;
+}
+
+#menu a {
+  color: var(--menu-text-color);
+}
+
+.menu {
+  color: var(--text-main);
+  font-size: 2rem;
+  text-align: right;
+  overflow: hidden;
+  margin: 6px;
+  padding: 6px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.sticky + .about {
+  padding-top: 60px;
+}
+
+.about {
+  text-align: center;
+  padding-top: 5rem;
+  height: 32rem;
+}
+
+.projects {
+  text-align: center;
+  padding-top: 5rem;
+  height: 36rem;
+}
+
+.contact a {
+  color: var(--contact-text-color);
+}
+.contact {
+  font-size: 5rem;
+  text-align: center;
+  color: var(--contact-text-color);
+  height: 32rem;
+}
