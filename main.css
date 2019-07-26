@@ -35,10 +35,12 @@ header {
 
 .menu a {
   color: var(--menu-text-color);
+  text-shadow: 0.1em 0.1em 0.15em black;
 }
 
 .menu a:hover {
   color: var(--color-text-alt);
+  text-shadow: 0.1em 0.1em 0.15em var(--contact-text-color);
 }
 
 .menu {
@@ -85,10 +87,12 @@ h1 {
 
 .contact a {
   color: var(--contact-text-color);
+  text-shadow: 0.1em 0.1em 0.15em black;
 }
 
 .contact a:hover {
   color: var(--color-text-alt);
+  text-shadow: 0.1em 0.1em 0.15em var(--contact-text-color);
 }
 
 .contact h1 {
