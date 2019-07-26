@@ -39,7 +39,7 @@ header {
 }
 
 .menu a:hover {
-  color: var(--color-text-alt);
+  color: var(--background-alt);
   text-shadow: 0.1em 0.1em 0.15em var(--contact-text-color);
 }
 
@@ -91,7 +91,7 @@ h1 {
 }
 
 .contact a:hover {
-  color: var(--color-text-alt);
+  color: var(--background-alt);
   text-shadow: 0.1em 0.1em 0.15em var(--contact-text-color);
 }
 
