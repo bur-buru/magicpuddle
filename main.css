@@ -1,8 +1,10 @@
 :root {
   /* define fonts */
-  --font-menu: "Font Aweome Brands";
-  --font-main: ;
+  --font-menu: 'Font Aweome Brands';
+  --font-main: 'Source Sans Pro', sans-serif;
   --font-alt: ;
+  --font-h1: 'Fugaz One', cursive;
+
 
   /* define colors */
   --color-main:        #4b298b;
@@ -59,6 +61,11 @@ header {
   padding-top: 60px;
 }
 
+h1 {
+  font-family: var(--font-h1);
+  font-size: 4rem;
+}
+
 .about {
   color: var(--color-text-main);
   text-align: center;
@@ -67,6 +74,7 @@ header {
 }
 
 .projects {
+  font-family: var(--font-main);
   color: var(--color-text-main);
   text-align: center;
   padding-top: 6rem;
@@ -83,7 +91,6 @@ header {
 
 .contact h1 {
   color: var(--color-text-main);
-  font-size: 2rem;
 }
 
 .contact {
