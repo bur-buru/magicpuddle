@@ -10,9 +10,9 @@
   --color-main:        #6441A5;
   --color-main-alt:    #26a7de;
   --color-text-main:   #ffffff;
-  --color-text-alt:    #0f0f0f;
+  --color-text-alt:    #868686;
   --background-main:   #333333;
-  --background-alt: ;
+  --background-alt:     #161616;
   --menu-text-color:   	#f0f0f0;
   --contact-text-color: #26a7de;    
 }
@@ -100,9 +100,36 @@ h1 {
 }
 
 .contact {
-  font-size: 5rem;
+  font-size: 2rem;
   text-align: center;
   color: var(--contact-text-color);
-  height: 32rem;
-  padding-top: 6rem;
+  padding: 6px;
+}
+
+.email {
+  box-align: center;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.email form {
+  color: var(--color-text-alt);
+}
+
+.email p {
+  color: var(--color-text-main);
+}
+
+.email p input {
+  background-color: var(--background-alt);
+}
+
+.email textarea {
+  background-color: var(--background-alt);
+  color: var(--color-text-alt);
+}
+
+.credits {
+  color: var(--color-text-main);
+  font-size: 0.8rem;
 }
