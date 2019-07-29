@@ -143,11 +143,11 @@ h1 {
   color: var(--background);
 }
 
-.email p {
+.email label {
   color: var(--background-alt);
 }
 
-.email p input {
+.email label input {
   background-color: var(--background-alt);
   color: var(--text);
 }
