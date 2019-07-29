@@ -9,33 +9,49 @@
     <title>MagicPuddle</title>
   </head>
   <body>
-    <header class="sticky">
-      <div class="menu" id="menu">
-        <a class="menu" href="#home"><i class="fas fa-igloo"></i></a>
-        <a class="menu" href="https://github.com/bur-buru/magicpuddle" target="blank"><i class="fab fa-github-alt"></i></a>
-        <a class="menu" href="#projects"><i class="fab fa-app-store-ios"></i></a>
-        <a class="menu" href="https://github.com/bur-buru/magicpuddle/wiki" target="blank"><i class="fab fa-wikipedia-w"></i></a>
-        <a class="menu" href="#contact"><i class="fas fa-id-card"></i></a>
+    <header>
+      <div class="banner">
+        <div class="menu" id="menu">
+          <a class="menu" href="#home"><i class="fas fa-igloo"></i></a>
+          <a class="menu" href="https://github.com/bur-buru/magicpuddle" target="blank"><i class="fab fa-github-alt"></i></a>
+          <a class="menu" href="#projects"><i class="fab fa-app-store-ios"></i></a>
+          <a class="menu" href="https://github.com/bur-buru/magicpuddle/wiki" target="blank"><i class="fab fa-wikipedia-w"></i></a>
+          <a class="menu" href="#media"><i class="fas fa-photo-video"></i></a> 
+          <a class="menu" href="#contact"><i class="fas fa-envelope"></i></a>
+        </div>
       </div>
     </header>    
     <Main>
       <div class="about" id="about">
         <h1>MagicPuddle</h1>
-          <p>Collction of information, software, and personal projects</p>
-          <p>For use with Linux® or *nix systems</p>
+          <div class="paragraph">
+            <p>Collction of information, software, and personal projects</p>
+            <p>For use with Linux® or *nix systems</p>
+          </div>
       </div>
       <div class="projects" id="projects">
         <h1>Projects</h1>
+          <div class="project-grid" id="project-grid">
+            <a href="projects/fcc/tribute.html"><img src='projects/fcc/imgs/tribute.png'>Tribbute Page</a>
+            <a href="projects/fcc/tribute.html"><img src='projects/fcc/imgs/tribute.png'>Survey</a>
+            <a href="projects/fcc/tribute.html"><img src='projects/fcc/imgs/tribute.png'>Tribbute Page</a>
+            <a href="projects/fcc/tribute.html"><img src='projects/fcc/imgs/tribute.png'>Tribbute Page</a>
+            <a href="projects/fcc/tribute.html"><img src='projects/fcc/imgs/tribute.png'>Tribbute Page</a>
+            <a href="projects/fcc/tribute.html"><img src='projects/fcc/imgs/tribute.png'>Tribbute Page</a>
+          </div>
+      </div>
+      <div class="media" id="media">
+        <h1>Media</h1>
+          <div class="media-links" id="media-links">
+            <a href="https://twitch.tv/" target="blank"><i class="fab fa-twitch"></i></a>
+            <a href="https://discord.gg/" target="blank"><i class="fab fa-discord"></i></a>
+            <a href="https://youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+          </div>
       </div>
     </Main>
-    <footer class="contact" id="contact">
-      <div class="contact">
-        <h1>Contact</h1>
-        <a href="https://twitch.tv/" target="blank"><i class="fab fa-twitch"></i></a>
-        <a href="https://discord.gg/" target="blank"><i class="fab fa-discord"></i></a>
-        <a href="https://youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
-      </div>
+    <footer class="footer" id="contact">
+      <h1>Contact</h1>
       <div class="email">
         <form action="mailto:burburu@protonmail.com" method="get" enctype="text/plain">
           <p>Name: <input type="text" name="name" required /></p>
