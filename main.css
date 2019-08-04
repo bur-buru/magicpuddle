@@ -7,43 +7,37 @@
 
 
   /* define colors */
-  --primary:            #6200EE;
-  --primary-alt:        #3700B3;
-  --secondary:          #03DAC6;
+  --primary:            #541388;
+  --primary-alt:        #dc1975;
+  --secondary:          #00a29a;
   --secondary-alt:      #018786;
   --complement:         #90ee02;
   --complement-alt:     #ee6002;
 
-  --background:         #161616;
-  --background-alt:     #333333;
+  --background:         #080808;
+  --background-alt:     #4f4e4d;
   
-  --text:               #FFFFFF;
+  --text:               #e5dfdd;
   --text-alt:           #000000;    
   --error:   	          #B00020;
 }
 
-html {
-  font-family: var(--font-main);
-}
-
 body {
+  font-family: var(--font-main);
   background-color: var(--background);
 }
 
 .banner {
+  position: fixed;
   font-family: var(--font-menu);
   background-color: var(--primary);
   color:  var(--text);
   width: 100%;
-  padding: 2px;
-  position: fixed;
+  max-height: 25px;
   top: 0;
   left: 0;
 }
 
-.banner + .about {
-  padding-top: 60px;
-}
 
 h1 {
   color: var(--text);
@@ -51,11 +45,29 @@ h1 {
   font-size: 3rem;
   text-align: center;
   text-shadow: 0.1em 0.1em 0.15em var(--text-alt);
-  padding-top: 6rem;
+  padding-top: 4rem;
 }
 
 .paragraph {
   border-radius: 2rem;
+}
+
+.logo {
+  position: absolute;
+  top: -45px;
+  padding-left: 2px;
+}
+
+@media screen and (max-width: 600px) {
+  div.logo {
+    display: none;
+  }
+}
+
+.p-logo {
+  font-family: var(--font-h1);
+  text-shadow: 0.1em 0.1em 0.15em var(--text-alt);
+  font-size: 2.5em;
 }
 
 .menu a {
@@ -64,42 +76,54 @@ h1 {
 }
 
 .menu a:hover {
-  color: var(--primary);
-  text-shadow: 0.1em 0.1em 0.15em var(--text-alt);
+  color: var(--text-alt);
+  text-shadow: 0.1em 0.1em 0.15em var(--text);
 }
 
 .menu {
   font-size: 2rem;
   text-align: right;
   overflow: hidden;
-  margin: 6px;
-  padding: 6px;
   border-radius: 2rem;
+  padding-right: 8px;
+  margin: 2px;
+  padding: 4px;
+  right: 6px;
+  top: -45px;
 }
+
 
 .about {
   color: var(--text);
   text-align: center;
   padding-top: 5rem;
-  height: 32rem;
+  height: 37rem;
 }
 
 .projects {
   font-family: var(--font-main);
   color: var(--text);
   text-align: center;
+  height: 37rem;
 }
 
 .project-grid {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 0.3rem;
+  grid-gap: 0.5rem;
   max-width: 100%;
+  max-height: 12rem;
+  padding: 1rem;
 }
 
 .projects img {
   width: 100%;
-  max-height: 15rem;
+  max-height: 12rem;
+}
+
+.projects a img:hover {
+  background-color: #0808084b;
+  color: #0808084b;
 }
 
 .projects a {
@@ -109,34 +133,59 @@ h1 {
     transition: color 0.3s ease-out;
 }
 
+.projects a:hover {
+  color: #0808084b;
+}
+
 .media-links a {
-  color: var(--primary);
+  
   text-shadow: 0.1em 0.1em 0.15em var(--text-alt);
 }
 
 .media-links a:hover {
-  color: var(--background-alt);
-  text-shadow: 0.1em 0.1em 0.15em var(--primary-alt);
+  text-shadow: 0.1em 0.1em 0.15em var(--primary);
+}
+
+.media-links h1 {
+  margin-top: 1rem;
 }
 
 .media-links {
   font-size: 4rem;
   text-align: center;
   color: var(--text);
-  padding: 6px;
   min-height: 35rem;
+  max-width: 100%;
+  max-height: 35rem;
 }
 
-.contact {
+.fa-twitch {
+  color: #6441a5;
+}
+
+.fa-discord {
+  color: #7289da;
+}
+
+.fa-youtube {
+  color: #ff0000;
+}
+
+.fa-twitter {
+  color: #00aced;
+}
+
+.footer {
   text-align: center;
   color: var(--background-alt);
   padding: 6px;
-  min-height: 35rem;
+  min-height: 42rem;
 }
 
-.email {
-  text-align: center;
+.email { 
   font-size: 1rem;
+  padding: 1rem;
+  height: 35rem;
 }
 
 .email form {
@@ -145,14 +194,16 @@ h1 {
 
 .email label {
   color: var(--background-alt);
+  text-align: center;
 }
 
-.email label input {
+.email-input {
   background-color: var(--background-alt);
   color: var(--text);
 }
 
 .email textarea {
+  text-align: center;
   background-color: var(--background-alt);
   color: var(--text);
 }
@@ -161,8 +212,13 @@ input, textarea {
   border-color: var(--primary);
 }
 
+.button {
+  border-radius: 2rem;
+  background-color: var(--primary);
+}
+
 .credits {
-  color: var(--complement-alt);
+  color: var(--complement);
   font-size: 0.8rem;
   text-align: center;
 }
