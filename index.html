@@ -19,6 +19,11 @@
           <a class="menu" href="#media"><i class="fas fa-photo-video"></i></a> 
           <a class="menu" href="#contact"><i class="fas fa-envelope"></i></a>
         </div>
+        <div class="logo">
+          <p class="p-logo">
+            MagicPuddle
+          </p>
+        </div>
       </div>
     </header>    
     <Main>
@@ -32,12 +37,11 @@
       <div class="projects" id="projects">
         <h1>Projects</h1>
           <div class="project-grid" id="project-grid">
-            <a href="projects/fcc/tribute.html"><img src='projects/fcc/imgs/tribute.png'>Tribbute Page</a>
-            <a href="projects/fcc/survey.html"><img src='projects/fcc/imgs/survey.png'>Survey</a>
-            <a href="projects/fcc/.html"><img src='projects/fcc/imgs/tribute.png'>Placeholer</a>
-            <a href="projects/fcc/.html"><img src='projects/fcc/imgs/tribute.png'>Placeholer</a>
-            <a href="projects/fcc/.html"><img src='projects/fcc/imgs/tribute.png'>Placeholer</a>
-            <a href="projects/fcc/.html"><img src='projects/fcc/imgs/tribute.png'>Placeholer</a>
+            <a href="projects/fcc/tribute.html" target="blank"><img src='projects/fcc/imgs/tribute.png'>Tribbute Page</a>
+            <a href="projects/fcc/survey.html" target="blank"><img src='projects/fcc/imgs/survey.png'>Survey</a>
+            <a href="projects/fcc/plp.html" target="blank"><img src='projects/fcc/imgs/tribute.png'>Product Landing Page</a>
+            <a href="projects/fcc/techdoc.html" target="blank"><img src='projects/fcc/imgs/tribute.png'>Tech Doc Page</a>
+            <a href="projects/fcc/portfolio.html" target="blank"><img src='projects/fcc/imgs/tribute.png'>Personal Portfolio</a>
           </div>
       </div>
       <div class="media" id="media">
@@ -54,19 +58,29 @@
       <h1>Contact</h1>
       <div class="email">
         <form action="mailto:burburu@protonmail.com" method="get" enctype="text/plain">
-          <label>Name: <input type="text" name="name" required/></label><br>
-          <label>Email: <input type="text" name="email" required/></label><br>
-          <label>Message:
-            <textarea name="comments" rows="13" cols="35" placeholder="Send us a message" required></textarea>
-            </label><br>
-            <label>
-              <input type="submit" name="submit" value="Send" />
-              <input type="reset" name="reset" value="Clear" />
-            </label>
+          <div class="email-left">
+            <label>Name: </label> 
+          </div>
+          <div class="email-right">
+            <input class="email-input" type="text" name="name" cols="25" required/><br>
+          </div>
+          <div class="email-left">
+            <label>Email: </label>
+          <div class="email-right">
+            <input class="email-input" type="text" name="email" cols="25" required/><br><br>
+          </div>
+          <div class="left">
+            <label>Message: </label>
+          </div>
+          <div class="right">
+            <textarea name="comments" rows="10" cols="25" placeholder="Send us a message" required></textarea><br>
+          </div class="email-center">
+            <input class="button" type="button" name="submit" value="Send" />
+            <input class="button" type="button" name="reset" value="Clear" />
         </form>
       </div>
       <div class="credits">
-        <p>desiged by: burburu</p>
+        <p>built by: burburu</p>
       </div>
     </footer>
   </body>
