@@ -212,6 +212,7 @@ input, textarea {
 .button {
   border-radius: 2rem;
   background-color: var(--primary);
+  padding: 0.25rem;
 }
 
 .credits {
